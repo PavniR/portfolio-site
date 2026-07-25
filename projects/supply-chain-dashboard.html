@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Supply Chain Analytics-case study - Pavni Rastogi</title>
+<meta name="description" content="Case study: an end-to-end supply chain analytics dashboard built to diagnose delivery delays across a distribution network." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">PR</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="../index.html#home">Home</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ============ CASE STUDY HERO ============ -->
+<header class="case-hero">
+  <div class="section__inner">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All Projects</a>
+    <p class="eyebrow">Case Study</p>
+    <h1>Supply Chain Analytics & Inventory Optimization</h1>
+    <p class="case-hero__sub">Built an end-to-end cloud analytics platform that transforms 91k+ supply chain records into actionable inventory 
+      insights through SQL analytics, ABC-Pareto analysis, inventory optimization, and automated reporting.</p>
+
+    <div class="case-hero__meta">
+      <div><span class="label">Dataset</span><span>91K+ Supply Chain Transactions, 50 SKUs, 5 Warehouses, 12 Months</span></div>
+      <div><span class="label">Technologies</span><span>Python, SQL, PostgreSQL/supabase, Streamlit, Plotly</span></div>
+      <div class="case-hero__links">
+        <a href="https://github.com/PavniR/supply-chain-analytics-and-inventory-optimisation" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub Repository</a>
+        <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Live Dashboard</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="case-body">
+  <div class="section__inner">
+
+    <!-- Business Problem -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Problem</p>
+      <h2>Ops teams lacked a clear view of inventory health and replenishment priorities.</h2>
+      <p>Inventory decisions were based on static reports that made it difficult to identify high-value products, detect overstocking, and prioritize replenishment across warehouses. The objective was to build a centralized analytics platform that transformed operational data into actionable inventory decisions. It allows to simulate inventory scenarios and instantly calculate safety stock, reorder points, recommended order quantities, and inventory status.</p>
+    </section>
+
+    <!-- Objectives -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Objectives</p>
+      <h2>What the platform needed to deliver.</h2>
+      <ul class="case-list">
+        <li>Centralize operational reporting into a single analytics platform.</li>
+        <li>Prioritize high-value inventory using ABC-Pareto analysis.</li>
+        <li>Generate replenishment recommendations using inventory optimization.</li>
+        <li>Automate reporting through a cloud-hosted PostgreSQL backend and ETL pipeline.</li>
+        <li>Provide interactive dashboards for operational decision-making.</li>
+      </ul>
+    </section>
+
+    <!-- Dataset Overview -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Dataset Overview</p>
+      <h2>What went into the model.</h2>
+      <div class="case-grid-2">
+        <p>The project began with 91,000+ supply chain transactions containing SKU, warehouse, sales, inventory, lead time, demand, and profitability information. Additional analytical datasets were created through feature engineering to support inventory optimization and executive reporting.</p>
+        <p>Rather than querying raw transactional data directly, the workflow produced curated analytical tables for KPI reporting, inventory recommendations, and forecasting experiments before storing them in a cloud PostgreSQL database.</p>
+      </div>
+    </section>
+
+    <!-- Workflow -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Workflow</p>
+      <h2>End-to-end, from raw exports to a decision.</h2>
+      <div class="workflow">
+        <div class="workflow__step">Raw Data</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">Data Auditing & Wrangling</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">Feature Engineering</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">Exploratory Data Analysis</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">SQL Analytics</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">ABC-Pareto Analysis</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">Inventory Optimization</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">Cloud PostgreSQL</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">Interactive Dashboard & Inventory Optimizer</div>
+        <div class="workflow__arrow"></div>
+        <div class="workflow__step">Automated ETL Pipeline</div>
+      </div>
+    </section>
+
+    <!-- Dashboard Showcase -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Dashboard Showcase</p>
+      <h2>What ops sees every morning.</h2>
+      <div class="showcase">
+        <video src="../assets/detailed-supply-dash.mp4" autoplay muted loop playsinline></video>
+        <p><b>Overview Page:</b> Provides executives with a real-time summary of revenue, profit, warehouse performance, inventory health, and operational KPIs.</p>
+        <p><b>Inventory Optimizer:</b>Allows planners to simulate inventory scenarios and instantly calculate safety stock, reorder points, recommended order quantities, and inventory status for individual SKUs and download summary.</p>
+      </div>
+    </section>
+
+    <!-- Data Cleaning -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Data Cleaning</p>
+      <h2>Preparing data for reliable analysis.</h2>
+      <p>Validated raw operational records, engineered inventory metrics, standardized data types, and transformed transactional data into analytics-ready datasets that powered executive reporting and inventory optimization.</p>
+    </section>
+
+    <!-- Exploratory Data Analysis -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Understanding operational performance.</p>
+      <h2>Where the delays actually were.</h2>
+      <p>Initial analysis focused on warehouse performance, product profitability, inventory distribution, and revenue contribution. These findings identified where operational attention should be concentrated before optimization models were introduced.</p>
+    </section>
+
+
+    <!-- Business Insights -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Insights</p>
+      <h2>What the data actually said.</h2>
+      <p>TThe analysis suggests that improving inventory performance is less about holding more stock and more about prioritizing the right stock.</p>
+      <ul class="case-list">
+        <li>ABC-Pareto analysis showed that a small subset of SKUs generated most of the business value, making them the highest priority for inventory planning and service-level protection.</li>
+        <li>Overstocking represented the most common inventory issue, tying up working capital without improving product availability.</li>
+        <li>Inventory health varied considerably across warehouses, highlighting opportunities to rebalance stock instead of increasing overall inventory.</li>
+        <li>Centralizing operational KPIs made inventory risks significantly easier to identify.</li>
+      </ul>
+    </section>
+
+    <!-- Business Recommendations -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Recommendations</p>
+      <h2>What ops should do differently.</h2>
+      <ul class="case-list">
+        <li>Prioritize Category A products with stricter inventory monitoring and higher service-level targets to minimize business impact from stockouts.</li>
+        <li>Shift replenishment planning from fixed reorder rules to data-driven reorder points calculated from demand variability and lead times.</li>
+        <li>Review persistently overstocked SKUs for procurement adjustments, warehouse transfers, or promotional strategies to reduce carrying costs.</li>
+      </ul>
+    </section>
+
+    <!-- Challenges Faced -->
+    <section class="case-section reveal">
+      <h2 class="eyebrow">Challenge Faced:</h2>
+      <p>One experimental component of the project involved <b>demand forecasting</b> using machine learning. Although the models produced reasonable predictions, forecast accuracy was not consistently reliable enough for operational inventory planning. Rather than deploying a model with limited business value, the final solution focused on <b>deterministic inventory optimization using safety stock and reorder point calculations.</b> The forecasting workflow remains in the repository for future iteration.</p>
+    </section>
+
+    <!-- Future Improvements -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Future Improvements</p>
+      <h2>How this would evolve in production.</h2>
+      <p>Future iterations would integrate live ERP/WMS data through scheduled ingestion pipelines and revisit demand forecasting using longer historical windows, richer external features, and probabilistic forecasting methods.</p>
+      <p>Inventory recommendations could then combine forecasted demand with current stock positions for more dynamic replenishment planning.</p>
+    </section>
+
+    <!-- Key Takeaways -->
+    <section class="case-section reveal">
+      <p class="eyebrow">Key Takeaways</p>
+      <h2>The short version.</h2>
+      <div class="takeaways">
+        <div class="takeaways__item">
+          <span class="takeaways__q">What business question did this solve?</span>
+          <p>Built an end-to-end analytics platform that transformed raw supply chain data into actionable inventory decisions through centralized reporting, ABC/Pareto analysis, and inventory optimization.</p>
+        </div>
+        <div class="takeaways__item">
+          <span class="takeaways__q">Skills Demonstrated</span>
+          <p>Demonstrated an end-to-end analytics workflow covering Python, SQL, PostgreSQL, Streamlit, feature engineering, cloud deployment, and automated ETL pipelines.</p>
+        </div>
+        <div class="takeaways__item">
+          <span class="takeaways__q">What I'd Improve?</span>
+          <p>Extend the platform with live operational integrations, probabilistic demand forecasting, automated data validation, and dynamic replenishment planning driven by real-time demand signals.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-end reveal">
+      <a href="../index.html#projects" class="btn btn--ghost">&larr; Back to Projects</a>
+      <a href="https://github.com/yourusername/supply-chain-dashboard" target="_blank" rel="noopener" class="btn btn--primary">GitHub Repository</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="section__inner footer__inner">
+    <h2>Let's Talk Data</h2>
+    <p>Always interested in solving meaningful business problems, building analytics solutions, and collaborating on impactful projects.</p>
+    <div class="footer__links">
+      <a href="mailto:pavnirastogi10@gmail.com">pavnirastogi10@gmail.com</a>
+      <a href="https://linkedin.com/in/pavni-rastogi-844128335/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/PavniR" target="_blank" rel="noopener">GitHub</a>
+      <a href="../assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <p class="footer__location">Based in India · Open to remote &amp; relocation</p>
+    <p class="footer__copy">© <span id="year"></span> Pavni Rastogi</p>
+  </div>
+</footer>
+
+<script src="../project.js"></script>
+</body>
+</html>

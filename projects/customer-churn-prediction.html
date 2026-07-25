@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Customer Churn Prediction-Pavni Rastogi</title>
+<meta name="description" content="Case study: a churn-risk scoring model built to flag at-risk subscribers before renewal." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+
+<nav class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">PR</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="../index.html#home">Home</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="case-hero">
+  <div class="section__inner">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All Projects</a>
+    <p class="eyebrow">End-to-End Analytics</p>
+    <h1>Customer Churn Analytics & Prediction</h1>
+    <p class="case-hero__sub">An end-to-end customer retention intelligence solution that combines SQL analytics, machine learning, explainable AI, 
+      interactive dashboards, and deployment to identify high-risk customers before they churn.</p>
+
+    <div class="case-hero__meta">
+      <div><span class="label">Dataset</span><span>Demographic, financial & behavioral customer records<br> 10,000 retail banking customers</span></div>
+      <div><span class="label">Technologies</span><span>SQL · Python · Scikit-learn <br> SHAP · Power BI · Streamlit</span></div>
+      <div class="case-hero__links">
+        <a href="https://github.com/PavniR/bank-customer-churn-analysis" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub Repository</a>
+        <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Live Dashboard</a>
+      </div>
+    </div>
+</header>
+
+<main class="case-body">
+  <div class="section__inner">
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Problem</p>
+      <h2>Customer churn was identified only after customers had already left.</h2>
+      <p>The bank relied on historical reporting to understand churn, but lacked a proactive way to identify customers at risk before they left. 
+        Without early warning signals, retention campaigns were reactive, resources were spread across low-risk customers, 
+        and opportunities to prevent churn were frequently missed.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Objectives</p>
+      <h2>What the solution needed to deliver.</h2>
+      <ul class="case-list">
+        <li>Identify customers with the highest probability of churn before they leave.</li>
+        <li>Understand the key business drivers influencing customer churn.</li>
+        <li>Prioritize customers using a risk score for targeted retention campaigns.</li>
+        <li>Provide transparent, explainable predictions that business teams can trust.</li>
+      </ul>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Dataset Overview</p>
+      <h2>What went into the model.</h2>
+      <div class="case-grid-2">
+        <p>The project analyzes 10,000 retail banking customers with demographic, financial, behavioral, and account information. Features include 
+          credit score, age, tenure, balance, products owned, activity status, geography, complaints, satisfaction score, and customer engagement metrics.</p>
+        <p>The dataset was transformed into a production-ready feature set through preprocessing, categorical encoding, feature selection, and leakage removal before model development.</p>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Workflow</p>
+      <h2>From customer records to retention decisions.</h2>
+      <div class="workflow">
+        <div class="workflow__step">Raw Data</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">SQL Business Analysis</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Python EDA</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Feature Engineering</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Predictive Modelling</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">SHAP Explainability</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Power BI Dashboard</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Streamlit Deployed Intelligence Application</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Business Insights</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Recommendations</div>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Dashboard Showcase</p>
+      <h2>What marketing reviews each week.</h2>
+      <div class="showcase">
+        <video src="../assets/streamlit-bank-app.mp4" autoplay muted loop playsinline></video>
+        <p><b>AI-Powered Customer Retention Decision Support System </b> <br>
+        An interactive Streamlit application that predicts customer churn probability, generates a risk score,
+        recommends retention actions, and explains every prediction using SHAP-based explainable AI for transparent decision-making.</p><br>
+        <video src="../assets/bank-dash-video.mp4" autoplay muted loop playsinline></video>
+        <p><b>Customer Churn Analytics Dashboard</b><br>An executive dashboard designed to monitor customer churn patterns, compare risk across
+           customer segments, and prioritize retention strategies using interactive filters and performance metrics.</p>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Analytics</p>
+      <h2>What the data revealed about customer churn.</h2>
+      <p>SQL and exploratory analysis uncovered several business patterns that directly influenced the modelling strategy. Older customers, 
+        inactive members, and customers holding multiple banking products exhibited substantially higher churn rates. Complaint records 
+        produced unrealistically strong predictive performance, revealing target leakage and leading to their exclusion from the production model.<br>
+        These insights shaped both the final feature selection and the recommendations presented to business stakeholders.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">predictive Modelling</p>
+      <h2>Building a realistic churn prediction system.</h2>
+      <p>Multiple classification models were evaluated, including Logistic Regression, Decision Tree, and Random Forest. 
+        Rather than selecting the highest accuracy model, the final solution prioritized realistic business performance by removing 
+        data leakage and balancing precision with recall.
+      <br>SHAP explainability was integrated to explain individual predictions, generate customer-specific 
+      risk factors, and improve trust in model decisions.</p>
+    </section>
+
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Key Findings</p>
+      <h2>What mattered most for customer retention.</h2>
+      <ul class="case-list">
+        <li>Older customers showed consistently higher churn risk than younger segments.</li>
+        <li>Inactive members were significantly more likely to leave the bank.</li>
+        <li>Customers owning three or more products displayed unexpectedly high churn rates.</li>
+        <li>Germany recorded the highest churn rate among all customer regions.</li>
+        <li>Customer complaints represented target leakage and were excluded from the deployed model.</li>
+      </ul>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Recommendations</p>
+      <h2>How retention efforts can become proactive.</h2>
+      <ul class="case-list">
+        <li>Prioritize high-risk customers using churn probability and risk score rather than treating every customer equally.</li>
+        <li>Launch personalized engagement campaigns for inactive customers before churn occurs.</li>
+        <li>Review customer experience for customers with multiple banking products.</li>
+        <li>Monitor churn trends by geography and age to support targeted retention strategies.</li>
+        <li>Use SHAP explanations to help relationship managers understand why a customer is at risk before contacting them.</li>
+      </ul>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Challenges Faced</p>
+      <h2>Building a model that could actually be deployed.</h2>
+      <p>One of the biggest challenges was identifying and removing target leakage caused by the complaint feature, which produced unrealistically 
+        high model performance. Another challenge involved balancing precision and recall so the model remained useful for real retention campaigns 
+        instead of simply maximizing accuracy. Finally, SHAP explanations were translated into business-friendly language so non-technical users could 
+        understand every prediction.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Future Improvements</p>
+      <h2>Extending the solution beyond a portfolio project.</h2>
+      <p>Future iterations could incorporate live banking transaction data, automated retraining pipelines, customer lifetime 
+        value for retention prioritization, and continuous model monitoring to detect performance drift. 
+        Integrating CRM systems would also enable relationship managers to receive real-time churn alerts 
+        and personalized retention recommendations.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Key Takeaways</p>
+      <h2>The short version.</h2>
+      <div class="takeaways">
+        <div class="takeaways__item">
+          <span class="takeaways__q">What business problem did this solve?</span>
+          <p>Enabled proactive customer retention by identifying customers most likely to churn before they leave, allowing targeted interventions instead of reactive campaigns.</p>
+        </div>
+        <div class="takeaways__item">
+          <span class="takeaways__q">What technical skills did I strengthen?</span>
+          <p>Applied end to end analytics including SQL, feature engineering, machine learning, class imbalance, explainable AI (SHAP), Power BI, Streamlit deployment, and business-oriented model evaluation.</p>
+        </div>
+        <div class="takeaways__item">
+          <span class="takeaways__q">If I rebuilt this today, what would I improve?</span>
+          <p>I'd add a feedback loop that tracks whether flagged customers who received outreach actually stayed, to validate the model's real-world impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-end reveal">
+      <a href="../index.html#projects" class="btn btn--ghost">&larr; Back to Projects</a>
+      <a href="https://github.com/PavniR/bank-customer-churn-analysis" target="_blank" rel="noopener" class="btn btn--primary">GitHub Repository</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="section__inner footer__inner">
+    <h2>Let's Talk Data</h2>
+    <p>Always interested in solving meaningful business problems, building analytics solutions, and collaborating on impactful projects.</p>
+    <div class="footer__links">
+      <a href="mailto:pavnirastogi10@gmail.com">pavnirastogi10@gmail.com</a>
+      <a href="https://www.linkedin.com/in/pavni-rastogi-844128335/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/PavniR" target="_blank" rel="noopener">GitHub</a>
+      <a href="../assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <p class="footer__location">Based in India · Open to remote &amp; relocation</p>
+    <p class="footer__copy">© <span id="year"></span> Pavni Rastogi</p>
+  </div>
+</footer>
+
+<script src="../project.js"></script>
+</body>
+</html>

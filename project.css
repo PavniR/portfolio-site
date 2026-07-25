@@ -1,0 +1,149 @@
+/* ============================================
+   Case study hero
+   ============================================ */
+.case-hero{
+  background: var(--paper);
+  padding: 150px 0 80px;
+}
+.case-hero__back{
+  display:inline-block;
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+  transition: color .2s var(--ease);
+}
+.case-hero__back:hover{ color: var(--ink); }
+.case-hero h1{
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 600;
+  margin: 6px 0 18px;
+  max-width: 780px;
+}
+.case-hero__sub{
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 620px;
+  line-height: 1.6;
+  margin-bottom: 44px;
+}
+.case-hero__meta{
+  display:grid;
+  grid-template-columns: repeat(3, auto) 1fr;
+  gap: 32px;
+  align-items:end;
+  padding-bottom: 44px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 44px;
+}
+.case-hero__meta > div{ display:flex; flex-direction:column; gap:6px; }
+.case-hero__meta .label{
+  font-size: .72rem; text-transform:uppercase; letter-spacing:.08em;
+  color: var(--ink-soft); font-weight:600;
+}
+.case-hero__links{ display:flex; gap:12px; justify-self:end; }
+.case-hero__image{
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+.case-hero__image img,
+.case-hero__image video{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+@media (max-width: 860px){
+  .case-hero__meta{ grid-template-columns: 1fr 1fr; }
+  .case-hero__links{ grid-column: 1 / -1; justify-self:start; }
+}
+
+/* ============================================
+   Case study body sections
+   ============================================ */
+.case-body{ padding: 90px 0; }
+.case-section{ padding-bottom: 80px; margin-bottom: 80px; border-bottom: 1px solid var(--line); }
+.case-section:last-of-type{ border-bottom:none; }
+.case-section h2{
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  font-weight: 600;
+  margin: 8px 0 22px;
+  max-width: 640px;
+}
+.case-section p{ color: var(--ink-soft); line-height: 1.75; max-width: 680px; }
+.case-grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.case-list{ margin:0; padding-left: 20px; color: var(--ink-soft); line-height: 1.8; max-width: 680px; }
+.case-list li{ margin-bottom: 8px; }
+
+@media (max-width: 760px){
+  .case-grid-2{ grid-template-columns: 1fr; }
+}
+
+/* Workflow vertical/horizontal flow */
+.workflow{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+.workflow__step{
+  background: var(--paper);
+  border-radius: 100px;
+  padding: 12px 20px;
+  font-size: .85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.workflow__arrow{
+  width: 22px; height: 1px; background: var(--line);
+  position: relative;
+}
+.workflow__arrow::after{
+  content:"";
+  position:absolute; right:0; top:-3px;
+  width:6px; height:6px;
+  border-right:1px solid var(--ink-soft);
+  border-bottom:1px solid var(--ink-soft);
+  transform: rotate(-45deg);
+}
+
+/* Dashboard showcase */
+.showcase{ margin-bottom: 40px; overflow: hidden; max-width: 100%; }
+.showcase img,
+.showcase video{
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  margin-bottom: 16px;
+}
+.showcase p{ max-width: 680px; }
+
+/*changed colour of github repo & back to projects button*/
+.case-hero__links .btn--ghost,
+.case-end .btn--ghost{
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Key takeaways */
+.takeaways{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.takeaways__item{ background: var(--paper); border-radius: var(--radius-md); padding: 26px; }
+.takeaways__q{ display:block; font-family: var(--font-display); font-weight:600; font-size: .95rem; margin-bottom: 10px; }
+.takeaways__item p{ font-size: .88rem; margin:0; }
+
+@media (max-width: 860px){
+  .takeaways{ grid-template-columns: 1fr; }
+}
+
+.case-end{
+  display:flex; gap: 14px; padding-top: 10px; flex-wrap:wrap;
+}

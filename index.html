@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pavni Rastogi-Business & Data Analyst</title>
+<meta name="description" content="Portfolio of Pavni Rastogi - Business and Data Analyst turning data into decisions through analytics, automation, dashboards, and predictive modelling." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nav__logo">PavniR</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero__typewrap" id="heroTypewrap">
+    <h1 class="hero__greeting" id="typeGreeting"><span class="cursor">&nbsp;</span></h1>
+    <p class="hero__role" id="typeRole"></p>
+    <p class="hero__tagline" id="typeTagline"></p>
+
+    <div class="hero__actions" id="heroActions">
+      <div class="hero__buttons">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="assets/Pavni_Rastogi_Resume.pdf" download="Pavni_Rastogi_Resume.pdf" rel="noopener" class="btn btn--ghost">Download Resume</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/PavniR" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.08.78 2.17v3.21c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pavni-rastogi-844128335/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z" fill="currentColor"/></svg>
+        </a>
+        <a href="mailto:pavnirastogi10@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.3 6.02a.8.8 0 0 0 1 0l7.3-6.02H4.2ZM20 7.3l-6.98 5.75a2.8 2.8 0 0 1-3.54 0L4 7.3v11.2c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.3Z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" id="heroScroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ WHO I AM ============ -->
+  <section class="section who" id="who">
+    <div class="section__inner who__grid">
+      <div class="who__text reveal">
+        <p class="eyebrow">Who I Am</p>
+        <h2>I enjoy solving problems where data meets business.</h2>
+        <p class="who__p">I'm currently a final-year <i>Computer Science</i> undergraduate, building a career at the intersection of <i>data analytics,
+           machine learning, and business strategy.</i></p>
+        <p class="who__p"> What started as curiosity about how much patterns and numbers in data can inform us,
+           has grown into a passion for building end-to-end analytics projects that answer real questions. 
+           I enjoy learning by building and use my tech stack to solve business problems and challenges.
+          I enjoy connecting technical analysis with decisions that create measurable business value.
+          I believe good analytics isn't about creating the most complex model, 
+          it's about understanding the problem, asking the right questions, and delivering 
+          insights that people can actually use. That's the mindset I try to integrate in every project I build.</p>
+        <p class="who__p">Alongside analytics, I'm expanding into machine learning and analytics engineering,
+           with a growing focus on building production-ready data solutions.</p>
+      </div>
+      <div class="who__stats">
+        <div class="stat-card reveal">
+          <span class="stat-card__num" data-count="12">0</span>
+          <span class="stat-card__label">Projects Built</span>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-card__num" data-count="20">0</span>
+          <span class="stat-card__label">Technologies Used</span>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-card__num" data-count="6">0</span>
+          <span class="stat-card__label">Domains Explored</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW I THINK ============ -->
+  <section class="section think" id="think">
+    <div class="section__inner">
+      <p class="eyebrow reveal">How I Think</p>
+      <h2 class="reveal">An approach, not just a stack.</h2>
+      <div class="think__flow">
+        <div class="think__step reveal">
+          <div class="think__icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Ask the Right Questions</h3>
+          <p>Start with the decision someone needs to make, not the dataset.</p>
+        </div>
+        <div class="think__connector" aria-hidden="true"></div>
+        <div class="think__step reveal">
+          <div class="think__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16M4 12h16M4 19h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Build Trustworthy Data</h3>
+          <p>Collect and clean the data. Trace sources, handle gaps, and validate before anything gets trusted.</p>
+        </div>
+        <div class="think__connector" aria-hidden="true"></div>
+        <div class="think__step reveal">
+          <div class="think__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9m6 10V5m6 14v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Explore patterns and validate assumptions</h3>
+          <p>Look for signal, test hypotheses, and question anything too convenient.</p>
+        </div>
+        <div class="think__connector" aria-hidden="true"></div>
+        <div class="think__step reveal">
+          <div class="think__icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4" width="17" height="12" rx="1.6" stroke="currentColor" stroke-width="1.6"/><path d="M8 20h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Deliver Solutions</h3>
+          <p>Build dashboards and predictive models designed for real-world decision making.</p>
+        </div>
+        <div class="think__connector" aria-hidden="true"></div>
+        <div class="think__step reveal">
+          <div class="think__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 19h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Drive Better Decisions</h3>
+          <p>Turn insights into recommendations that create measurable business impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section class="section stack" id="skills">
+    <div class="section__inner">
+      <div class="stack__intro">
+        <p class="eyebrow reveal">Tech Stack</p>
+        <h2 class="reveal">Tools I reach for.</h2>
+      </div>
+      <div class="stack__grid">
+
+        <div class="stack__card reveal">
+          <h3>Programming</h3>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="stack__card reveal">
+          <h3>Analytics</h3>
+          <div class="chips">
+            <span class="chip">Power BI</span>
+            <span class="chip">Plotly</span>
+            <span class="chip">Excel</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+          </div>
+        </div>
+
+        <div class="stack__card reveal">
+          <h3>Databases</h3>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Supabase</span>
+          </div>
+        </div>
+
+        <div class="stack__card reveal">
+          <h3>Visualization</h3>
+          <div class="chips">
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Seaborn</span>
+          </div>
+        </div>
+
+        <div class="stack__card reveal">
+          <h3>Automation</h3>
+          <div class="chips">
+            <span class="chip">BeautifulSoup</span>
+            <span class="chip">Selenium</span>
+            <span class="chip">Requests</span>
+          </div>
+        </div>
+
+        <div class="stack__card reveal">
+          <h3>Machine Learning</h3>
+          <div class="chips">
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">XGBoost</span>
+          </div>
+        </div>
+
+        <div class="stack__card reveal">
+          <h3>Development and Deployment</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Streamlit</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section class="section projects" id="projects">
+    <div class="section__inner">
+      <p class="eyebrow reveal">Featured Projects</p>
+      <h2 class="reveal">Projects & Case Studies.</h2>
+
+      <!-- PROJECT 1 -->
+      <div class="project-card reveal">
+        <div class="project-card__preview">
+          <video src="assets/dash-bankchurn-preview.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="project-card__body">
+          <h3>Bank Customer Retention Intelligence</h3>
+          <p class="project-card__problem">Business problem: Customer churn was eroding revenue, 
+            but retention efforts lacked visibility into who was at risk and what factors were driving customer exits.</p>
+          <p>Built an end-to-end analytics and machine learning solution combining SQL, predictive modeling, explainable AI, 
+            and interactive dashboards to identify high-risk customers and support data-driven retention strategies.</p>
+          <div class="chips chips--sm">
+            <span class="chip">Python</span><span class="chip">Scikit-learn</span><span class="chip">SQL</span>
+            <span class="chip">SHAP</span><span class="chip">Risk Scoring</span><span class="chip">Predictive Modelling</span>
+            <span class="chip">Power BI</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="projects/customer-churn-prediction.html" class="btn btn--primary btn--sm">View Case Study</a>
+            <a href="https://github.com/PavniR/bank-customer-churn-analysis" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PROJECT 2 -->
+      <div class="project-card reveal">
+        <div class="project-card__preview">
+          <video src="assets/dash-product-preview.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="project-card__body">
+          <h3>E-Commerce Product Growth Analytics</h3>
+          <p class="project-card__problem">Business problem: Millions of users visited the platform, but very few completed a purchase. The analysis identified where customers dropped off and which user segments offered the greatest growth opportunities.</p>
+          <p>Built an end-to-end product analytics case study to measure platform performance, analyze the purchase funnel, segment customers, and deliver data-driven recommendations through an executive Power BI dashboard.</p>
+          <div class="chips chips--sm">
+            <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+            <span class="chip">Pandas</span><span class="chip">Power BI</span><span class="chip">Purchase Funnel Analysis</span>
+            <span class="chip">Customer Segmentation</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="projects/product-analytics-dashboard.html" class="btn btn--primary btn--sm">View Case Study</a>
+            <a href="https://github.com/PavniR/product-growth-analytics" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card reveal">
+        <div class="project-card__preview">
+          <video src="assets/dash-supplychain-preview.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="project-card__body">
+          <h3>Supply Chain Analytics & inventory optimization</h3>
+          <p class="project-card__problem">Business Problem: Limited inventory visibility led to inefficient replenishment decisions and difficulty 
+            identifying high-value and overstocked products.</p>
+          <p>Designed an end-to-end analytics platform that transformed 91k+ supply chain records into actionable operational insights. 
+            The solution combines SQL analytics, ABC-Pareto product classification, inventory optimization, a cloud-hosted PostgreSQL database, 
+            and an automated ETL pipeline to support data-driven inventory planning and executive reporting.</p>
+          <div class="chips chips--sm">
+            <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+            <span class="chip">Inentory Optimization</span><span class="chip">Automated ETL Pipeline</span><span class="chip">ABC Analysis</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="projects/supply-chain-dashboard.html" class="btn btn--primary btn--sm">View Case Study</a>
+            <a href="https://github.com/PavniR/supply-chain-analytics-and-inventory-optimisation" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PROJECT 4 -->
+      <div class="project-card reveal">
+        <div class="project-card__preview">
+          <video src="assets/dash-airline-preview.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="project-card__body">
+          <h3>Airline Loyalty Program & Marketing Campaign Analytics</h3>
+          <p class="project-card__problem">Business problem: The airline lacked visibility into loyalty program performance and the true
+             impact of its 2018 marketing campaign on customer acquisition and retention.</p>
+          <p>An end-to-end analytics project that combines SQL, Python, and Power BI to evaluate campaign effectiveness, customer lifetime value,
+             loyalty tiers, and member engagement through interactive executive dashboards.</p>
+          <div class="chips chips--sm">
+            <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Power BI</span><span class="chip">DAX</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="projects/airline-campaign-analysis.html" class="btn btn--primary btn--sm">View Case Study</a>
+            <a href="https://github.com/PavniR/airline-campaign-program-analysis" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <p style="text-align: center;">Explore more on GitHub</p>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="section__inner footer__inner">
+    <h2>Let's Talk Data</h2>
+    <p>Always interested in solving meaningful business problems, building analytics solutions, and collaborating on impactful projects.</p>
+    <div class="footer__links">
+      <a href="mailto:pavnirastogi10@gmail.com">pavnirastogi10@gmail.com</a>
+      <a href="https://www.linkedin.com/in/pavni-rastogi-844128335/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/PavniR" target="_blank" rel="noopener">GitHub</a>
+      <a href="assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <p class="footer__location">Based in Noida,India · Open to remote &amp; relocation</p>
+    <p class="footer__copy">© <span id="year"></span> Pavni Rastogi</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

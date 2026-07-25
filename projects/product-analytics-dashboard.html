@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product Analytics-Pavni Rastogi</title>
+<meta name="description" content="Case study: a self-serve dashboard tracking activation, retention, and feature adoption across the user lifecycle." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+
+<nav class="nav is-scrolled" id="nav">
+  <a href="../index.html" class="nav__logo">PR</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="../index.html#home">Home</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="case-hero">
+  <div class="section__inner">
+    <a href="../index.html#projects" class="case-hero__back">&larr; All Projects</a>
+    <p class="eyebrow">Case Study</p>
+    <h1>E-Commerce Product Growth Analytics</h1>
+    <p class="case-hero__sub">An end-to-end product analytics case study built on the RetailRocket clickstream dataset. By analyzing the complete customer journey: from product discovery to purchase, the project uncovers where users drop off, identifies high-value customer segments, and delivers recommendations to improve conversion, retention, and long-term customer value.</p>
+
+    <div class="case-hero__meta">
+      <div><span class="label">Dataset</span><span>RetailRocket E-Commerce Clickstream Dataset, Over 2.7M+ events</span></div>
+      <div><span class="label">Technologies</span><span>Python, PostgreSQL, Power BI, Pandas, Plotly, Matplotlib, Seaborn </span></div>
+      <div class="case-hero__links">
+        <a href="https://github.com/PavniR/product-growth-analytics" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub Repository</a>
+        <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Live Dashboard</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="case-body">
+  <div class="section__inner">
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Problem</p>
+      <h2>High website traffic doesn't necessarily translate into revenue.</h2>
+      <p>Despite recording millions of customer interactions, only a small fraction of visitors completed a purchase. Without understanding where customers abandoned their journey or which users generated the greatest long-term value, it was difficult to prioritize product improvements and growth initiatives.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Objectives</p>
+      <h2>What the analysis needed to answer.</h2>
+      <ul class="case-list">
+        <li>How efficiently does the platform convert visitors into paying customers?</li>
+        <li>At which stage of the purchase journey do users abandon the process?</li>
+        <li>Which customer groups contribute the highest long-term value?</li>
+        <li>How engaged are users after their first purchase?</li>
+        <li>Which product and retention strategies could improve overall conversion?</li>
+      </ul>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Dashboard Showcase</p>
+      <h2>What product managers use weekly.</h2>
+      <div class="showcase">
+        <video src="../assets/detailed-product-dash.mp4" autoplay muted loop playsinline></video>
+        <p><b>Executive Performance Dashboard:</b> Provides a high-level view of platform health through KPIs such as user activity, engagement, event distribution, and purchase conversion.</p>
+        <p><b>Purchase Funnel:</b> Visualizes customer progression from product view to add-to-cart and finally purchase while measuring conversion at each stage. Pinpoints where users abandon the buying journey, helping product teams prioritize improvements with the greatest potential impact.</p>
+        <p><b>RF Customer Segmentation:</b>Groups purchasing users into six behavioral segments using Recency and Frequency scoring. Supports personalized retention strategies, loyalty programs, lifecycle marketing, and CRM targeting.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Dataset Overview</p>
+      <h2>Understanding customer behavior at scale.</h2>
+      <div class="case-grid-2">
+        <p>The project analyzed approximately 2.76 million clickstream events generated by 1.41 million users across more than 235,000 products. After cleaning and feature engineering, the dataset supported funnel analysis, behavioral segmentation, executive KPI reporting, and customer growth analysis.</p>
+        <p>Although the original dataset includes product property and category tables, the project focuses on behavioral analytics rather than catalog analysis, making the clickstream events sufficient for answering the business questions.</p>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Workflow</p>
+      <h2>End-to-end, from event logs to a self-serve view.</h2>
+      <div class="workflow">
+        <div class="workflow__step">Raw Clickstream Data</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Data Cleaning & Validation</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Feature Engineering</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Exploratory Data Analysis</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">SQL  KPI Development</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Purchase Funnel Analysis</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">RF Customer Segmentation</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Interactive Power BI Dashboard</div><div class="workflow__arrow"></div>
+        <div class="workflow__step">Business Recommendations</div>
+      </div>
+    </section>
+  
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Key Insights</p>
+      <h2>What the data actually said.</h2>
+      <ul class="case-list">
+        <li><b>Most visitors never reached meaningful purchase intent.</b><br> While the platform generated 2.76 million interactions across 1.41 million users, transactions represented only 0.84% of all events, indicating strong acquisition but weak purchase conversion</li>
+        <li><b>The largest conversion bottleneck occurred before users added products to their cart.</b><br>Only 2.69% of visitors progressed from viewing a product to adding it to their cart. Once customers demonstrated purchase intent, checkout performance improved considerably with a 31.07% Cart-to-Purchase conversion rate.</li>
+        <li><b>Repeat purchasing remained relatively limited.</b>RF segmentation showed that most buyers completed only a single purchase, with an average purchase frequency of 1.92, highlighting significant opportunities to improve customer retention.</li>
+        <li><b>Customer behavior varied significantly across lifecycle stages.</b><br>Segmenting users into Champions, High-Value, Emerging, Casual, Declining, and Inactive groups created a clearer picture of customer value beyond simple purchase counts, enabling more targeted lifecycle strategies.</li>
+      </ul>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Business Recommendations</p>
+      <h2>What the product team should do differently.</h2>
+      <ul class="case-list">
+        <li><b>Improve product discovery: </b>Increase View-to-Cart conversion through better search functionality, personalized recommendations, and improved merchandising.</li>
+        <li><b>Optimize product detail page: s</b>Strengthen purchase intent with richer product information, customer reviews, higher-quality imagery, and clearer calls-to-action.</li>
+        <li><b>Invest in retention for valuable customers: </b>Develop loyalty initiatives targeting Champions and High-Value Users' tiers to maximize long-term customer lifetime value.</li>
+        <li><b>Re-engage dormant users: </b>Launch personalized campaigns for Emerging, Casual, Declining, and Inactive customers to encourage repeat purchases.</li>
+        <li><b>Personalize lifecycle marketing: </b>Use behavioral segmentation to tailor CRM communication based on customer engagement patterns instead of treating all users equally.</li>
+      </ul>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Challenges Faced</p>
+      <h2>Working with behavioral data & Preparing large scale click-stream data</h2>
+      <p>The dataset did not include transaction values, making traditional RFM analysis not feasible.
+        To overcome this limitation, <b>customer segmentation was redesigned around Recency and Frequency</b>, allowing meaningful behavioral insights without requiring monetary values.<br>
+      Millions of interaction records required careful preprocessing, feature engineering, and <b>optimized SQL workflows</b> to support efficient analysis and dashboard reporting.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Future Improvements</p>
+      <h2>How this would evolve in production.</h2>
+      <p>In a production setting, this project could be enhanced with automated ETL pipelines, scheduled dashboard refreshes, data quality monitoring, cloud-based storage, and richer event tracking to support continuous, scalable product analytics.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow">Key Takeaways</p>
+      <h2>quick overview.</h2>
+      <div class="takeaways">
+        <div class="takeaways__item">
+          <span class="takeaways__q">Business Value</span>
+          <p>Identified the largest friction point in the customer journey, segmented users by behavioral value, and translated clickstream data into practical recommendations for improving conversion and retention.</p>
+        </div>
+        <div class="takeaways__item">
+          <span class="takeaways__q">Technical Growth</span>
+          <p>Demonstrated an end-to-end analytics workflow spanning data preparation, feature engineering, exploratory analysis, SQL-based KPI development, behavioral segmentation, and executive dashboard design using Python, PostgreSQL, and Power BI.</p>
+        </div>
+        <div class="takeaways__item">
+          <span class="takeaways__q">Next Iteration</span>
+          <p>Future versions could incorporate transaction values for full RFM analysis, event-level attribution, cohort retention analysis, A/B experiment evaluation, and predictive models for conversion and customer churn.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-end reveal">
+      <a href="../index.html#projects" class="btn btn--ghost">&larr; Back to Projects</a>
+      <a href="https://github.com/yourusername/product-analytics-dashboard" target="_blank" rel="noopener" class="btn btn--primary">GitHub Repository</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="section__inner footer__inner">
+    <h2>Let's Talk Data</h2>
+    <p>Always interested in solving meaningful business problems, building analytics solutions, and collaborating on impactful projects.</p>
+    <div class="footer__links">
+      <a href="mailto:pavnirastogi10@gmail.com">pavnirastogi10@gmail.com</a>
+      <a href="https://www.linkedin.com/in/pavni-rastogi-844128335/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/PavniR" target="_blank" rel="noopener">GitHub</a>
+      <a href="../assets/Pavni_Rastogi_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <p class="footer__location">Based in India · Open to remote &amp; relocation</p>
+    <p class="footer__copy">© <span id="year"></span> Pavni Rastogi</p>
+  </div>
+</footer>
+
+<script src="../project.js"></script>
+</body>
+</html>
